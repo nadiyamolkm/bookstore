@@ -12,7 +12,7 @@ const bookController = {
                 'INSERT INTO books (Title, Author, Description, Price, Genre) VALUES (?, ?, ?, ?, ?)',
                 [Title, Author, Description, Price, Genre]
             );
-
+                console.log(result)
             // Send a success response back to the client
             res.json({ message: 'Book inserted successfully', insertedId: result[0].insertId });
         } catch (err) {
