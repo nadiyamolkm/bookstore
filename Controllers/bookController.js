@@ -3,7 +3,7 @@ const connection = require('../dbConnection')
 const bookController = {
 
     createBook: async (req, res) => {
-        // controller logic for adding a new book
+        // controller logic for adding a new book- test
         const { Title, Author, Description, Price, Genre } = req.body;
 
         try {
